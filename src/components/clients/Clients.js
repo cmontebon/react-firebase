@@ -12,7 +12,6 @@ class Clients extends Component {
   };
 
   static getDerivedStateFromProps(props, state) {
-    console.log(state);
     const { clients } = props;
 
     if (clients) {
@@ -85,6 +84,10 @@ class Clients extends Component {
     }
   }
 }
+
+Clients.propTypes = {
+  clients: PropTypes.array
+};
 
 export default compose(
   firestoreConnect([
