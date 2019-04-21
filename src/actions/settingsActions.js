@@ -32,7 +32,7 @@ export const setDisableBalanceOnEdit = () => {
 
   return {
     type: DISABLE_BALANCE_ON_EDIT,
-    action: settings.disableBalanceOnEdit
+    payload: settings.disableBalanceOnEdit
   };
 };
 
